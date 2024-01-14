@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var number = +prompt("Vui lòng nhập vào số muốn kiểm tra");
+      var total = 0;
+      for (let i = 1; i < number; i++) {
+        if (i % number == 0) {
+          total = total + i;
+          if (total == number) {
+            console.log(number, " là số hoàn hảo");
+          } else {
+            console.log(number, " không phải là số hoàn hảo");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
